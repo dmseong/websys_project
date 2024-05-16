@@ -1,0 +1,34 @@
+#kuzuha {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#kuzuha:hover {
+    transform: scale(0.95);
+}
+
+#kuzuha_info {
+    display: none;
+}
+
+#kanae {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+#kanae:hover {
+    transform: scale(0.95);
+}
+
+#kanae_info {
+    display: none;
+}
+
+#btn-top {
+    position: relative;
+}
+#btn{
+    position: absolute;
+    right: 20px;
+    bottom: 6px;
+}

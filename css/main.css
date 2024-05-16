@@ -1,0 +1,12 @@
+#after_login {
+    font-weight: bold;
+}
+
+#news1 {
+    display: inline-block;
+    font-weight: bold;
+}
+
+#news2 {
+    font-weight: bold;
+}
