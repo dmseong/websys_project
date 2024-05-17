@@ -13,5 +13,13 @@
 
 gmp-map {
     height: 100%;
-  }
+}
+
+#tweet {
+    display: inline-block;
+}
+
+#map {
+    display: inline-block;
+}
 
