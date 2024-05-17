@@ -1,0 +1,30 @@
+#news1{
+    display: inline-block;
+}
+
+#www_prnt{
+    position:relative;
+}
+
+#www{
+    position: absolute;
+    left: 200px;
+}
+
+#up2u_prnt{
+    position: relative;
+}
+
+#up2u {
+    position: absolute;
+    left: 200px;
+}
+
+#sbg_prnt {
+    position: relative;
+}
+
+#sbg {
+    position: absolute;
+    left: 200px;
+}
