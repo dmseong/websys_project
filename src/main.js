@@ -28,4 +28,5 @@ window.onload = function(){
             aflgn.innerHTML = name + "님 환영합니다"
         }
     })
+
 }
