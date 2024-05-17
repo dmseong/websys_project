@@ -1,0 +1,28 @@
+.col-sm-2 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#bord{
+    position: relative;
+}
+
+.info {
+    position: absolute;
+    top: 30px;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#stock {
+    right: 250px;
+}
+
+#price {
+    right: 60px;
+}
+
+#pay {
+    padding: 0 100px;
+}

@@ -1,0 +1,36 @@
+.card:hover {
+    transform: scale(0.93);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.26);
+    transition: 0.5s;
+}
+
+.card-text {
+    font-weight: bold;
+}
+
+.goodslink {
+    text-decoration: none;
+}
+
+#price {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.count a {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+#minus {
+    padding-left: 180px;
+}
+
+#buy {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
