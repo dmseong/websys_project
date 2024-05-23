@@ -1,3 +1,23 @@
+function SetCookie(name, value, expiredays) {
+    let cookieStr = name + "=" + escape(value) + 
+    ((expiredays == null)? "" : ("; expires=" + expiredays.toUTCString()));
+    document.cookie = cookieStr;
+}
+
+function GetCookie(name) {
+    let str = name + "=";
+    let pairs = document.cookie.split(";");
+    for (let i = 0; i < pairs.length; i++) {
+        let pair = pairs[i].trim();
+        let unit = pair.split("=");
+        if (unit[0] === name) {
+            return unescape(unit[1]);
+        }
+    }
+    return null;
+}
+
+
 function isValidEmail(email) {
     let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailPattern.test(email);
@@ -35,6 +55,18 @@ window.onload = function(){
             let emailValue = email.value
             let name = emailValue.substring(0, emailValue.indexOf('@'))
             aflgn.innerHTML = name + "님 환영합니다"
+
+            let userRole = emailValue.includes("2with13") ? "admin" : "user"
+            let expiredays = new Date()
+            expiredays.setDate(expiredays.getDate() + 1)
+            SetCookie("user", userRole, expiredays)
+
+            if (userRole === "admin") {
+                aflgn.innerHTML += "<br><img src=img/hammer-solid.svg width=18px height=18px>관리자"
+            }
+            else {
+                aflgn.innerHTML += "<br><img src=img/logo.webp width=20px height=18px>회원"
+            }
         }
     })
 
